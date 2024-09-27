@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(208, 208, 111);
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        #header{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              padding: 10px 20px;
+              background-color: yellowgreen;
+        }
+        #topleft{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 30px;
+        }
+        #topright{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 30px;
+        }
+        #topleft span:hover{
+            transform: scale(1.05);
+            transition-timing-function: linear;
+            transition-duration: 0.05s;
+
+        }
+        #topright span:hover{
+            transform: scale(1.05);
+            transition-timing-function: linear;
+            transition-duration: 0.5s;
+
+        }
+        #middle{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="topleft">
+            <span>Company Name</span>
+            <span>Estabilshed on</span>
+        </div>
+        <div id="topright">
+            <span>Home</span>
+            <span>Carrers</span>
+            <span>Roles</span>
+            <span>Contact Us</span>
+        </div>
+    </div>
+    <div id="middle">
+        <img id="imm" src="theWeekndpic.jpeg" alt="The Weeknd Picture">
+        <span>The Weeknd</span>
+        <p>Abel Makkonen Tesfaye  born February 16, 1990, known professionally as the Weeknd, is a Canadian singer-songwriter.[2][3] He is known for his unconventional musical production, artistic reinventions and use of the falsetto register.
+<br><br>
+     
+     <button id="theme">Change Theme</button>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
