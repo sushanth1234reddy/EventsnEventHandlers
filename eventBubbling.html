@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+        }
+        #a{
+           background-color: purple;
+           height: 200px;
+           width: 400px;
+        }
+        #b{
+            background-color: aqua;
+            height: 150px;
+            width: 250px;
+        }
+        #c{
+            background-color: green;
+            height: 75px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"> I am a
+        <div id="b"> I am b
+            <div id="c">
+  I am c
+            </div>
+        </div>
+    </div>
+    <script>
+        let a=document.getElementById("a");
+        let b=document.getElementById("b");
+        let c=document.getElementById("c");
+//by default the usecapture is set False so originally we can see the Event Bubbling(event propagation form child to parent) mechanism
+//to acheive Event Capturing(event propagation from Parent to child) we set useCapture to true, like below.
+        a.addEventListener("click",()=>{
+            alert("a is clicked")
+        },true);
+         b.addEventListener("click",()=>{
+            alert("b is clicked")
+        },true);
+         c.addEventListener("click",()=>{
+            alert("c is clicked")
+        },true);
+
+    </script>
+</body>
+</html>
